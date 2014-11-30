@@ -11,8 +11,6 @@
 #include <math.h>
 #include <time.h>
  int rand_seed = 8;
- unsigned int aleatorios;
- unsigned int r1;
  int rand ()
  {
     rand_seed = rand_seed * 1103515245 + 12345;
@@ -330,13 +328,12 @@ scheduler(void)
 {
   struct proc *p;
   int fila;
-
+  unsigned int aleatorios;
   for(;;){
     // Enable interrupts on this processor.
     sti(); 
 		//###############ESCOLHADAFILA############################
 		aleatorios =  0 + rand()%(12-0);		
-		r1=rand();
 		if(aleatorios>=0 && aleatorios<=5)
 		fila = 0;
 			else
