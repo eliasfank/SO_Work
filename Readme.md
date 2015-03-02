@@ -23,3 +23,5 @@ Cada fila recebe um número fixo de bilhetes:
 •Fila 3: 1 bilhete.
 Quando um processo é criado (instanciado), deve-se informar em qual fila o processo será inserido(i.e.,
 o usuário define no instante da criação do processo).
+
+Elias Fank, Geovani Kostulski
